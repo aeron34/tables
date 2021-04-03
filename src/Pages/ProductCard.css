@@ -1,0 +1,28 @@
+p {
+  color: white;
+  display:inline-block;
+}
+
+h2{
+  color: white;
+  text-align: center;
+}
+
+
+section {
+display: inline-block;
+  margin: 20px;
+  width: 250px;
+  padding: 25px;
+  transition: transform 100ms ease;
+}
+
+section:hover {
+  transform: translateY(-20px);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+
+}
