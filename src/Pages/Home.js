@@ -35,7 +35,9 @@ class Home extends Component {
         'Follow up to 20 Tables',
         'Join any type of Table']}/></a>
 
-        <a onClick={this.click}href="#under_construction"><ProductCard btn={()=>{}}tier='PREMIUM' color='yellow'
+        <button onClick={this.click}
+        style={{backgroundColor: "transparent",
+        border:'none'}}><ProductCard btn={()=>{}}tier='PREMIUM' color='yellow'
         feats={['$3.99/Month',
         'Host royalty Tables and receive profit from conversations',
         'Unlimited pictures and GIFs per messages',
@@ -43,7 +45,7 @@ class Home extends Component {
         'No Ads',
         'Receive donations for your Tables, \n from Fiat to Crypto,',
         'Embedd your twitch stream inside of your Tables']}/>
-        </a>
+        </button>
       </div>
       </>
     )
