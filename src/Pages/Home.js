@@ -17,7 +17,10 @@ class Home extends Component {
   click = () => {
     this.setState({on: false})
   }
-
+  click2 = () => {
+    this.setState({on: false})
+    document.getElementById('google').click();
+  }
   render()
   {
     let on = this.state.on;
@@ -35,7 +38,7 @@ class Home extends Component {
         'Follow up to 20 Tables',
         'Join any type of Table']}/></a>
 
-        <button onClick={this.click}
+        <button onClick={this.click2}
         style={{backgroundColor: "transparent",
         border:'none'}}><ProductCard btn={()=>{}}tier='PREMIUM' color='yellow'
         feats={['$3.99/Month',

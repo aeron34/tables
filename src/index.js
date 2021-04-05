@@ -3,6 +3,8 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import Home from './Pages/Home';
 
+let x = 0;//document.getElementById('root').getAttribute('func');
+console.log(x);
 ReactDOM.render(
   <React.StrictMode>
     <Home />
