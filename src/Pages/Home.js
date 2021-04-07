@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM, {Component} from 'react';
 import ProductCard from './ProductCard'
+import Calculator from './Calculator'
 import './Home.css'
 import Nav from './Nav'
 
@@ -16,10 +17,15 @@ class Home extends Component {
 
   click = () => {
     this.setState({on: false})
+    fetch('http://www.linxthegame.com/send_free_email').then(
+      a => {console.log('s');}
+    )
   }
   click2 = () => {
     this.setState({on: false})
-    document.getElementById('google').click();
+    fetch('http://www.linxthegame.com/send_paid_email').then(
+      a => {console.log('s');}
+    )
   }
   render()
   {
@@ -31,7 +37,10 @@ class Home extends Component {
     {
       front = (
         <>
+        <Calculator/>
+
       <h2>PICK A PLAN</h2>
+
       <div className='box'>
         <a onClick={this.click} href="#under_construction"><ProductCard tier='BASIC'color='green'feats={['Free','Host royalty-free Tables',
         'Up to 2 pictures per message',

@@ -2,13 +2,10 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import Home from './Pages/Home';
+import Chat from './Pages/chat';
 
-let x = 0;//document.getElementById('root').getAttribute('func');
-console.log(x);
 ReactDOM.render(
-  <React.StrictMode>
-    <Home />
-  </React.StrictMode>,
+    <Chat />,
   document.getElementById('root')
 );
 

@@ -1,0 +1,85 @@
+:root{
+  --chat_height:  625px;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: white;
+  border-radius: 30px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+.mediabox {
+  width: 100%;
+  height: 30%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  background-color: rgba(10,10,10,1);
+}
+
+.chatbox {
+  width: 60%;
+  height: var(--chat_height);
+  background-color: rgba(31,31,31,1);
+}
+
+.spotify {
+  transition: transform 150ms ease;
+  animation: fadeIn ease 1.5s;
+  }
+
+@keyframes fadeIn {
+0% {margin-top: 120px;}
+100% {margin-top:0px;}
+}
+
+
+.message_box {
+  height: 70%;
+}
+
+.messages{
+  overflow-y: scroll;
+  width: 100%;
+  height: 85%;
+}
+.messenger {
+  width: 100%;
+  height: 15%;
+  display: flex;
+  padding-left: 30px;
+  background-color: rgba(22,21,21,1);
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+
+}
+
+.sidebar {
+    width: 20%;
+    height: var(--chat_height);
+    overflow-y: scroll;
+    overflow-x: hidden;
+    background-color: rgba(17,16,16,1);
+}
+
+.outer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+
+}
